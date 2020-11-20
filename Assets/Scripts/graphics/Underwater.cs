@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Rendering.PostProcessing;
 
 [ExecuteInEditMode]
 
@@ -17,6 +18,8 @@ public class Underwater : MonoBehaviour {
 	
 	public Color mUnderWaterBubblesColor = new Color(0.27f,0.27f,0.27f,1f); 
 	public Color mUpWaterBubblesColor = new Color(0.019607843f,0.019607843f,0.019607843f,1f);
+
+    public PostProcessVolume underwaterProcessing;
 	#endregion
 	
 	
@@ -38,9 +41,11 @@ public class Underwater : MonoBehaviour {
 			if(Camera.main == cam && !cam.gameObject.GetComponent(typeof(UnderwaterEffect)) ) {
 					cam.gameObject.AddComponent(typeof(UnderwaterEffect));	
 				}
-				
+
+            underwaterProcessing.weight = 1f;
+
 				UnderwaterEffect effect = (UnderwaterEffect)cam.gameObject.GetComponent(typeof(UnderwaterEffect));				
-				if(effect) {
+				if (effect) {
 					effect.enabled = true;					
 				}
 				
@@ -69,8 +74,10 @@ public class Underwater : MonoBehaviour {
 			
 		}
 		else{
-			
-			UnderwaterEffect effect = (UnderwaterEffect)cam.gameObject.GetComponent(typeof(UnderwaterEffect));
+
+            underwaterProcessing.weight = 0f;
+
+            UnderwaterEffect effect = (UnderwaterEffect)cam.gameObject.GetComponent(typeof(UnderwaterEffect));
 				if(effect && effect.enabled) {
 					effect.enabled = false;
 				}

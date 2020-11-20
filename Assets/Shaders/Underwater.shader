@@ -42,8 +42,9 @@ Shader "Hidden/Underwater" {
 	}
 		
 	half4 frag (v2f i) : COLOR {
-		half4 color = float4 (0,0,0,0);
+		half4 color = tex2D(_MainTex, i.uv); // float4 (0,0,0,0);
 
+		/*
 		color +=  tex2D (_MainTex, i.uv) * 2;
 		color +=  tex2D (_MainTex, i.uv01.xy);
 		color +=  tex2D (_MainTex, i.uv01.zw);
@@ -52,7 +53,7 @@ Shader "Hidden/Underwater" {
 		color +=  tex2D (_MainTex, i.uv45.xy);
 		color +=  tex2D (_MainTex, i.uv45.zw);	
 		color /= 8.0;
-		
+		*/
 		//float dep = tex2D(_CameraDepthTexture, i.uv).r;
 		//dep = Linear01Depth(dep);
 
