@@ -8,7 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Underwater Exploration.unity
     guid: 0f5ce03b13eaa324b866a5830c8e9aed
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GameOverBattery.unity
     guid: c8eec29be5c99db45ac2581f7a08779e
-  m_configObjects: {}
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 5c6f25ad5e3d14a259a6d44de865ca4d,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 63963ca4ccb174481a88049a8815cc26,
+      type: 2}
+    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: e48aa2091619c448da43da91b4a89f36,
+      type: 2}
