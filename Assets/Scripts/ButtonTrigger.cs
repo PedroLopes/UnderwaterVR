@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Collider))]
 
@@ -14,7 +15,7 @@ public class ButtonTrigger : MonoBehaviour
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
-        if(!pressedInProgress)
+        if (!pressedInProgress & other.name.Substring(0, 4) == "Hand")
         {
             pressedInProgress = true;
             onButtonPressed?.Invoke();
