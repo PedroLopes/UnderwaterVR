@@ -122,7 +122,10 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 0.1
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 11400000, guid: e48aa2091619c448da43da91b4a89f36, type: 2}
+  - {fileID: -2814964475341187856, guid: 63963ca4ccb174481a88049a8815cc26, type: 2}
+  - {fileID: 11400000, guid: 5c6f25ad5e3d14a259a6d44de865ca4d, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -164,7 +167,8 @@ PlayerSettings:
   resolutionScalingMode: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
-  applicationIdentifier: {}
+  applicationIdentifier:
+    Android: com.DefaultCompany.Underwater
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 23
@@ -754,8 +758,8 @@ PlayerSettings:
   webGLWasmStreaming: 0
   scriptingDefineSymbols:
     1: CROSS_PLATFORM_INPUT;UNITY_POST_PROCESSING_STACK_V2
-    4: CROSS_PLATFORM_INPUT;MOBILE_INPUT
-    7: CROSS_PLATFORM_INPUT;MOBILE_INPUT;UNITY_POST_PROCESSING_STACK_V2
+    4: CROSS_PLATFORM_INPUT
+    7: CROSS_PLATFORM_INPUT;UNITY_POST_PROCESSING_STACK_V2
     13: CROSS_PLATFORM_INPUT;UNITY_POST_PROCESSING_STACK_V2
     14: MOBILE_INPUT
     19: UNITY_POST_PROCESSING_STACK_V2
