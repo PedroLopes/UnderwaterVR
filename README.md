@@ -46,7 +46,7 @@ Within the scene are 3 main user interface categories:
 
 ![interface](tutorial-images/Project_UserInterfaces.jpg)
 
-Additionally, there are three crewmates scattered across your map: Pedro, Romain, and Susie, which you can see are selected below.
+Additionally, there are three crewmates on boats scattered across your map: Pedro, Romain, and Suzie, which you can see are selected below.
 
 ![interface](tutorial-images/Project_Crewmates.JPG)
 
