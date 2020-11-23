@@ -65,6 +65,24 @@ Check the homework instructions in the class wiki.
 
 We highly recommend you start by completing this tutorial: https://docs.unity3d.com/ScriptReference/
 
+### Public vs. private variables
+
+![initial](tutorial-images/yudai/initial.png)
+
+![code1](tutorial-images/yudai/code1.png)
+
+![inspector1](tutorial-images/yudai/inspector1.png)
+
+![result1](tutorial-images/yudai/result1.png)
+
+![initial2](tutorial-images/yudai/initial2.png)
+
+![code2](tutorial-images/yudai/code2.png)
+
+![inspector2](tutorial-images/yudai/inspector2.png)
+
+![result2](tutorial-images/yudai/result2.png)
+
 ### Unity3D API and reference (always search here to see what functions are available, do, etc)
 
 https://docs.unity3d.com/ScriptReference/
