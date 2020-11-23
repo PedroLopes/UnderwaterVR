@@ -100,11 +100,11 @@ As you can see, Ethan is now facing to the view (because of 'y_axis') and tilted
 
 ![initial2](tutorial-images/yudai/initial2.png)
 
-![code2](tutorial-images/yudai/code2.png)
+![code2](tutorial-images/yudai/code2rev.png)
 
 ![inspector2](tutorial-images/yudai/inspector2.png)
 
-![result2](tutorial-images/yudai/result2.png)
+![result2](tutorial-images/yudai/result2rev.png)
 
 ### Unity3D API and reference (always search here to see what functions are available, do, etc)
 
