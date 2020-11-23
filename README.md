@@ -1,14 +1,28 @@
-# Underwater Final
+# Underwater User Interfaces
 
-This repository includes the Unity project to complete the final project for "Intro to HCI (CMSC 20300)." The project features a simple scuba-diving-esque scene, for which you must improve and complete the player's user interface.
+This repository includes the Unity project to complete the final project for "Intro to HCI (CMSC 20300)." 
 
-## Project Functionality
+The project features a simple scuba-diving-esque scene, for which you must improve and complete the player's user interface. **All the instructions for the homework are in the class wiki.** 
 
-### Specifications
+## Template code functionality
 
-Download and install **Unity Hub** (https://unity3d.com/get-unity/download). Then, make sure to add Unity version **2019.4.1f1** via the hub (this is a long-term support version as of 2020/11/22). Most computers should be able to handle this project without any problems.
+### 1. Specifications
 
-### Navigation & Interactions
+Download and install **Unity Hub** (https://unity3d.com/get-unity/download). Then, make sure to add Unity version **2019.4.1f1** via the hub (this is a long-term support version as of 2020/11/22). Most computers should be able to handle this project without any problems (we have tested this on new/old laptops on windows and mac). 
+
+After you have downloaded the project, you can start the "game" (the experience) by clicking in the play button. 
+
+### 2. Starting
+
+Here for more source and more details: https://docs.unity3d.com/Manual/UsingTheEditor.html
+
+![interface](tutorial-images/Editor-Breakdown.png)
+
+* Click the play button to start. 
+  ![play_button](tutorial-images/play_button.png)
+* If you are having difficulties starting the project, read the introduction to unity's interface below (section  6.2)
+
+### 3. Navigation & Interactions
 
 Use your mouse to orient the player and the following keys for navigation:
 
@@ -22,7 +36,7 @@ Use your mouse to orient the player and the following keys for navigation:
 
 The keys remain the same when you go underwater, but you may have a harder time jumping due to the pressure from the water. **Special note:** when you call the emergency frequency, you're game restarts.
 
-### Key Scripts, Game Objects, & Functions
+### 4. Key Scripts, Game Objects, & Functions
 
 To complete your homework, you may need to implement some UIs or simple code that interfaces with parts of the existing project. Below we provide a list of key scripts, game objects, and functions you may want to keep in mind:
 
@@ -55,17 +69,17 @@ To complete your homework, you may need to implement some UIs or simple code tha
   * `GameOverBattery`: game over screen when your battery runs out.
   * `GameOverOxygen`: alternative game over screen when your oxygen runs out.
 
-## Homework
+## 5. Homework
 
 Check the homework instructions in the class wiki. 
 
-## Learning Unity
+## 6. Learning Unity
 
-### Unity intro sequence
+### 6.1 Unity intro sequence
 
-We highly recommend you start by completing this tutorial: https://docs.unity3d.com/ScriptReference/
+**We highly recommend you start by completing this tutorial**: https://docs.unity3d.com/ScriptReference/
 
-### Unity's interface
+### 6.2 Unity's interface
 
 Here for more source and more details: https://docs.unity3d.com/Manual/UsingTheEditor.html
 
@@ -85,7 +99,7 @@ You can also visit the Asset Store if you wish to add premade 3D elements, scrip
 
 ![asset_store](tutorial-images/asset_store.png)
 
-### Private vs. public variable
+### 6.3 Private vs. public variable (aka exposing variables to the "Inspector" tab)
 
 You need to know there are two different types of variables in Unity: ``private`` and ``public`` variables.
 
@@ -106,6 +120,7 @@ Let's see how this script turns out to be...
 
 Then, when you go back to the inspector, now you can see the variable, ``x_axis`` which **you can directly manipulate on the inspector**; this is very useful and we highly recommend you to take advantage of it.  
 Whereas, we never see anything regarding ``y_axis`` on the inspector. This is the **fundamental** difference between ``private`` and ``public`` variables. If you want to make your variable accessible from outside of a specific script, you have to define it as a ``public variable``.  
+
 When you do not put any prefix (i.e., ``private`` or ``public``) to your variables, Unity automatically regards them as ``private`` variables which you can only make change on them through the scope of the original script.  
 
 Now, we've set the value of ``x_axis`` to ``40`` on the Unity's *inspector* window.  
@@ -115,14 +130,27 @@ Let's see the result by playing the scene.
 
 As you can see, Ethan is now facing to the view (because of ``y_axis``) and tilted (because of ``x_axis``).
 
+Further, public variables can be referred by external scripts.  
+We show this with the following example.
+
 ![initial2](tutorial-images/yudai/initial2.png)
+
+Now, let's create additional (empty) game object called 'External Controller' and attach a new script titled 'externalController'.
 
 ![code2](tutorial-images/yudai/code2rev.png)
 
+In this script, we define another public variable, 'original' in which we can call the public variable, 'x_axis'.  
+And, we try to read the value of 'x_axis' and show it on the console.
+
 ![inspector2](tutorial-images/yudai/inspector2.png)
+
+Make sure that you assign the Ethan object to the public variable, 'original' on the inspector.
 
 ![result2](tutorial-images/yudai/result2rev.png)
 
-### Unity3D API and reference (always search here to see what functions are available, do, etc)
+As you can see, now we could successfully read the value of the public variable from the external script.  
+By editing 'externalController', you can also manipulate 'x_axis'.
+
+### 6.4 Unity3D API and reference (always search here to see what functions are available, do, etc)
 
 https://docs.unity3d.com/ScriptReference/
