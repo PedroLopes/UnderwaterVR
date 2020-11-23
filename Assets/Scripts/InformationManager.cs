@@ -65,7 +65,7 @@ public class InformationManager : MonoBehaviour
     {
         currentBatteryLevel = Mathf.Clamp(currentBatteryLevel + batteryConsumptionRate * Time.deltaTime, 0f, batteryLevelMax);
 
-        if (currentBatteryLevel <= 0.1f)
+        if ((currentBatteryLevel <= 0.1f) && (GetDepth() < 0f))
             GameOverBattery();
     }
 
