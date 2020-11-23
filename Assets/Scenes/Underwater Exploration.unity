@@ -3862,7 +3862,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 292472618}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0.8528686, y: 0.086824074, z: -0.15038373, w: 0.49240384}
   m_LocalPosition: {x: 2.85, y: 1.36, z: 3.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3871,7 +3871,7 @@ Transform:
   - {fileID: 843538014}
   m_Father: {fileID: 99916756}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 120, y: 20, z: 0}
 --- !u!114 &292472620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18625,7 +18625,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411081789}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
@@ -18849,10 +18849,10 @@ MonoBehaviour:
     BobAmount: 0.1
   m_StepInterval: 5
   m_FootstepSounds:
-  - {fileID: 0}
-  - {fileID: 0}
-  m_JumpSound: {fileID: 0}
-  m_LandSound: {fileID: 0}
+  - {fileID: 8300000, guid: 0df3b4fccd33944468e3b0593eec6697, type: 3}
+  - {fileID: 8300000, guid: 0df3b4fccd33944468e3b0593eec6697, type: 3}
+  m_JumpSound: {fileID: 8300000, guid: 0df3b4fccd33944468e3b0593eec6697, type: 3}
+  m_LandSound: {fileID: 8300000, guid: 0df3b4fccd33944468e3b0593eec6697, type: 3}
 --- !u!143 &1411081793
 CharacterController:
   m_ObjectHideFlags: 0
@@ -18879,7 +18879,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411081789}
   m_LocalRotation: {x: -0, y: 0.3175497, z: -0, w: 0.9482417}
-  m_LocalPosition: {x: 397.1, y: 15.74, z: 492.5}
+  m_LocalPosition: {x: 397.1, y: 17.128, z: 492.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1072720617}
@@ -21989,7 +21989,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 10
   field of view: 60
-  orthographic: 1
+  orthographic: 0
   orthographic size: 2
   m_Depth: 4
   m_CullingMask:

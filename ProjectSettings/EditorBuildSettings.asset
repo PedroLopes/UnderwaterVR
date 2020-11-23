@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Underwater Exploration.unity
     guid: 0f5ce03b13eaa324b866a5830c8e9aed
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/GameOverBattery.unity
     guid: c8eec29be5c99db45ac2581f7a08779e
+  - enabled: 1
+    path: Assets/Scenes/GameOverOxygen.unity
+    guid: 6bdd044524591df4c91e8796e0c6ddb0
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 5c6f25ad5e3d14a259a6d44de865ca4d,
       type: 2}

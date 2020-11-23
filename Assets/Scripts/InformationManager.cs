@@ -22,7 +22,7 @@ public class InformationManager : MonoBehaviour
     // Battery info
     private float batteryLevelMax = 100f;
     private float currentBatteryLevel = 100f;
-    private float batteryConsumptionRate = -0.417f; // in batt/second.
+    private float batteryConsumptionRate = -0.8f; // in batt/second.
     
     /*
      * INFORMATION RETRIEVAL FUNCTIONS
@@ -35,6 +35,11 @@ public class InformationManager : MonoBehaviour
     public float GetBatteryLevel()
     {
         return currentBatteryLevel;
+    }
+
+    public float GetMaxBatteryLevel()
+    {
+        return batteryLevelMax;
     }
 
     public float GetOxygenLevel()
@@ -61,7 +66,7 @@ public class InformationManager : MonoBehaviour
         currentBatteryLevel = Mathf.Clamp(currentBatteryLevel + batteryConsumptionRate * Time.deltaTime, 0f, batteryLevelMax);
 
         if (currentBatteryLevel <= 0.1f)
-            GameOver();
+            GameOverBattery();
     }
 
     private void OxygenUpdate ()
@@ -80,7 +85,7 @@ public class InformationManager : MonoBehaviour
         currentOxygenLevel = Mathf.Clamp(currentOxygenLevel + oxygenDifference, 0f, oxygenLevelMax);
 
         if (currentOxygenLevel <= 0.05f)
-            GameOver();
+            GameOverOxygen();
     }
 
     // Update is called once per frame
@@ -90,8 +95,13 @@ public class InformationManager : MonoBehaviour
         BatteryUpdate();
     }
 
-    void GameOver()
+    void GameOverOxygen()
     {
-        SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
+        SceneManager.LoadScene("GameOverOxygen", LoadSceneMode.Single);
+    }
+
+    void GameOverBattery()
+    {
+        SceneManager.LoadScene("GameOverBattery", LoadSceneMode.Single);
     }
 }
