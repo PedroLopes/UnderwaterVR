@@ -57,6 +57,16 @@ To complete your homework, you may need to implement some UIs or simple code tha
 
 ## Homework
 
-
 Check the homework instructions in the class wiki. 
 
+## Learning Unity
+
+### Unity intro sequence
+
+We highly recommend you start by completing this tutorial: https://docs.unity3d.com/ScriptReference/
+
+### Unity3D API and reference (always search here to see what functions are available, do, etc)
+
+https://docs.unity3d.com/ScriptReference/
+
+![logo](/Users/plopes/playground/UnderwaterVR/tutorial-images/logo.png)
