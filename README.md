@@ -70,8 +70,8 @@ We highly recommend you start by completing this tutorial: https://docs.unity3d.
 You need to know there are two different types of variables in Unity: private and public variables.
 
 We will explain this with a simple example you see in the below.  
-There is a character (Ethan) standing on a plain.
-Here, we try to rotate Ethan with a simple script, "rotateCharacter" attached to Ethan.
+There is a character (Ethan) standing on a plain.  
+Here, we try to rotate Ethan with a simple script, "Rotate Character" attached to Ethan.
 
 ![initial](tutorial-images/yudai/initial.png)
 
