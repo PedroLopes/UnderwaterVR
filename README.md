@@ -87,36 +87,33 @@ You can also visit the Asset Store if you wish to add premade 3D elements, scrip
 
 ### Private vs. public variable
 
-You need to know there are two different types of variables in Unity: private and public variables.
+You need to know there are two different types of variables in Unity: ``private`` and ``public`` variables.
 
 We will explain this with a simple example you see in the below.
 
 ![initial](tutorial-images/yudai/initial.png)
 
-There is a character (Ethan) standing on a plain.  
-Here, we try to rotate Ethan with a simple script, "Rotate Character" attached to Ethan.
+There is a character (Ethan) standing on a plain.  We will try to rotate Ethan with a simple script, which we call ``Rotate Character`` and is attached to Ethan's ``game object``.
 
 ![code1](tutorial-images/yudai/code1.png)
 
-Inside the script, we define two variables: 'x_axis' and 'y_axis', which respectively control the rotation of Ethan around x and y axes.  
-Importantly, we define 'x_axis' as a public float while 'y_axis' as a private float.  
-And we only dectate the value (-90) of 'y_axis' in the script.  
+Inside the script, we define two variables: ``x_axis`` and ``y_axis``, which respectively control the rotation of Ethan around x and y axes.  
+Importantly, we define ``x_axis`` as a ``public float`` while ``y_axis`` as a ``private float``.  
+And we only dectate the value (-90) of ``y_axis`` in the script.  
 Let's see how this script turns out to be...
 
 ![inspector1](tutorial-images/yudai/inspector1.png)
 
-Then, when you go back to the inspector, now you can see the variable, 'x_axis' which you can directly manipulate on the inspector.  
-Whereas, we never see anything regarding 'y_axis' on the inspector.  
-This is the fundamental difference between private and public variables you should know at this moment.  
-If you want to make your variable accessible from outside of a specific script, you have to define it as a public variable.  
-When you do not put any prefix (i.e., private or public) to your variables, Unity automatically regard them as private variables which you can only make change on them through the original script.  
+Then, when you go back to the inspector, now you can see the variable, ``x_axis`` which **you can directly manipulate on the inspector**; this is very useful and we highly recommend you to take advantage of it.  
+Whereas, we never see anything regarding ``y_axis`` on the inspector. This is the **fundamental** difference between ``private`` and ``public`` variables. If you want to make your variable accessible from outside of a specific script, you have to define it as a ``public variable``.  
+When you do not put any prefix (i.e., ``private`` or ``public``) to your variables, Unity automatically regards them as ``private`` variables which you can only make change on them through the scope of the original script.  
 
-Now, we've set the value of 'x_axis' to 40 on the inspector.  
+Now, we've set the value of ``x_axis`` to ``40`` on the Unity's *inspector* window.  
 Let's see the result by playing the scene.   
 
 ![result1](tutorial-images/yudai/result1.png)
 
-As you can see, Ethan is now facing to the view (because of 'y_axis') and tilted (because of 'x_axis').
+As you can see, Ethan is now facing to the view (because of ``y_axis``) and tilted (because of ``x_axis``).
 
 ![initial2](tutorial-images/yudai/initial2.png)
 
@@ -129,5 +126,3 @@ As you can see, Ethan is now facing to the view (because of 'y_axis') and tilted
 ### Unity3D API and reference (always search here to see what functions are available, do, etc)
 
 https://docs.unity3d.com/ScriptReference/
-
-![logo](tutorial-images/logo.png)
