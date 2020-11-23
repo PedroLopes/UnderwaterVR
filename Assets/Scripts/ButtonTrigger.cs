@@ -15,7 +15,7 @@ public class ButtonTrigger : MonoBehaviour
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
-        if (!pressedInProgress & other.name.Substring(0, 4) == "Hand")
+        if (!pressedInProgress && (other.name.Substring(0, 4) == "Hand") && (other.tag == "Player"))
         {
             pressedInProgress = true;
             onButtonPressed?.Invoke();
@@ -24,7 +24,10 @@ public class ButtonTrigger : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        if (other.tag == "Player")
+        {
             pressedInProgress = false;
             onButtonPressed?.Invoke();
+        }
     }
 }

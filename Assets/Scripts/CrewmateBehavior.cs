@@ -24,7 +24,7 @@ public class CrewmateBehavior : MonoBehaviour
 
     IEnumerator RandomCall ()
     {
-        yield return new WaitForSeconds(Random.Range(10f, 50f));
+        yield return new WaitForSeconds(Random.Range(10f, 120f));
         if (ctm.playerTransmitter.IncomingCall(callAudioCaller, frequency)) // If call failed, restart
         {
             Debug.Log("Call attempted!");

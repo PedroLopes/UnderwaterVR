@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using System;
+using UnityEngine.SceneManagement;
 
 public class CallTowerManager : MonoBehaviour
 {
@@ -16,19 +17,10 @@ public class CallTowerManager : MonoBehaviour
     public int[] crewmateFrequencies;
 
     public AudioClip wrongFrequency;
+    public AudioClip emergencyAudio;
+    private int emergencyFrequency = 1001;
 
     public SimpleDial playerTransmitter;
-
-
-    public int GetFrequencyMax()
-    {
-        return transmitterFrequencyRangeMax;
-    }
-
-    public int GetFrequencyMin()
-    {
-        return transmitterFrequencyRangeMin;
-    }
 
     // Start is called before the first frame update
     void Start()
@@ -84,12 +76,32 @@ public class CallTowerManager : MonoBehaviour
         return returnInfo;
     }
 
+    public int GetFrequencyMax()
+    {
+        return transmitterFrequencyRangeMax;
+    }
+
+    public int GetFrequencyMin()
+    {
+        return transmitterFrequencyRangeMin;
+    }
+
+    public int GetEmergencyFrequency()
+    {
+        return emergencyFrequency;
+    }
+
 
     /*
      * CALL FUNCTIONS
      */
     public AudioClip CallCrewmate(int frequency)
     {
+        if (frequency == emergencyFrequency)
+        {
+            StartCoroutine(Emergency());
+            return emergencyAudio;
+        }
         if (crewmateFrequencies.Contains(frequency))
         {
             return crewmates[Array.IndexOf(crewmateFrequencies, frequency)].GetComponent<CrewmateBehavior>().callAudioReceiver;
@@ -108,4 +120,10 @@ public class CallTowerManager : MonoBehaviour
         return crewmates[(int)UnityEngine.Random.Range(0, crewmates.Count)].GetComponent<CrewmateBehavior>().callAudioCaller;
     }
     */
+
+    IEnumerator Emergency ()
+    {
+        yield return new WaitForSeconds(emergencyAudio.length + 0.5f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }
