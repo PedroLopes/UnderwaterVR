@@ -8,7 +8,7 @@ The project features a simple scuba-diving-esque scene, for which you must impro
 
 ### 1. Specifications
 
-Download and install **Unity Hub** (https://unity3d.com/get-unity/download). Then, make sure to add Unity version **2019.4.1f1** via the hub (this is a long-term support version as of 2020/11/22). Most computers should be able to handle this project without any problems (we have tested this on new/old laptops on windows and mac). 
+Download and install **Unity Hub** (https://unity3d.com/get-unity/download). Then, make sure to add Unity version **2019.4.15f1** via the hub (this is a long-term support version as of 2020/11/22). Most computers should be able to handle this project without any problems (we have tested this on new/old laptops on windows and mac). 
 
 After you have downloaded the project, you can start the "game" (the experience) by clicking in the play button. 
 
