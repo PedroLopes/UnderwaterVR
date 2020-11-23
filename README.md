@@ -36,7 +36,23 @@ Use your mouse to orient the player and the following keys for navigation:
 
 The keys remain the same when you go underwater, but you may have a harder time jumping due to the pressure from the water. **Special note:** when you call the emergency frequency, you're game restarts.
 
-### 4. Key Scripts, Game Objects, & Functions
+### 4. Interfaces & Crewmates
+
+Within the scene are 3 main user interface categories:
+
+* **(A)** An arm-anchored user interface, which includes some basic transmitter functionality.
+* **(B)** Flat interfaces for the Heads Up Display. For example, we developed the "Oxygen Level" gauge in class.
+* **(C)** 3D interfaces for the Heads Up Display, including the compass, which shows you the North and a target direction.
+
+![interface](tutorial-images/Project_UserInterfaces.jpg)
+
+Additionally, there are three crewmates scattered across your map: Pedro, Romain, and Susie, which you can see are selected below.
+
+![interface](tutorial-images/Project_Crewmates.JPG)
+
+These crewmates will attempt to call you and their information (to call them or find their location) can be accessed via the `Call Tower Manager` (see Section 5).
+
+### 5. Key Scripts, Game Objects, & Functions
 
 To complete your homework, you may need to implement some UIs or simple code that interfaces with parts of the existing project. Below we provide a list of key scripts, game objects, and functions you may want to keep in mind:
 
@@ -69,17 +85,17 @@ To complete your homework, you may need to implement some UIs or simple code tha
   * `GameOverBattery`: game over screen when your battery runs out.
   * `GameOverOxygen`: alternative game over screen when your oxygen runs out.
 
-## 5. Homework
+## 6. Homework
 
 Check the homework instructions in the class wiki. 
 
-## 6. Learning Unity
+## 7. Learning Unity
 
-### 6.1 Unity intro sequence
+### 7.1 Unity intro sequence
 
 **We highly recommend you start by completing this tutorial**: https://docs.unity3d.com/ScriptReference/
 
-### 6.2 Unity's interface
+### 7.2 Unity's interface
 
 Here for more source and more details: https://docs.unity3d.com/Manual/UsingTheEditor.html
 
@@ -99,7 +115,7 @@ You can also visit the Asset Store if you wish to add premade 3D elements, scrip
 
 ![asset_store](tutorial-images/asset_store.png)
 
-### 6.3 Game Objects and Scripts
+### 7.3 Game Objects and Scripts
 
 When working in Unity, you'll especially be working with things called `GameObjects` this is essentially anything that is in the scene's hierarchy.
 
@@ -119,7 +135,7 @@ As seen in the Inspector, GameObjects have components, which are usually Scripts
 
 Here, we drag and dropped the `ButtonTrigger` script to add it as a components of `key_silver`. New components usually appear at the end.
 
-### 6.4 Private vs. public variable (aka exposing variables to the "Inspector" tab)
+### 7.4 Private vs. public variable (aka exposing variables to the "Inspector" tab)
 
 You need to know there are two different types of variables in Unity: ``private`` and ``public`` variables.
 
@@ -171,6 +187,6 @@ Make sure that you assign the Ethan object to the public variable, 'original' on
 As you can see, now we could successfully read the value of the public variable from the external script.  
 By editing 'externalController', you can also manipulate 'x_axis'.
 
-### 6.5 Unity3D API and reference (always search here to see what functions are available, do, etc)
+### 7.5 Unity3D API and reference (always search here to see what functions are available, do, etc)
 
 https://docs.unity3d.com/ScriptReference/
