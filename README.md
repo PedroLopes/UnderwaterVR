@@ -57,15 +57,6 @@ To complete your homework, you may need to implement some UIs or simple code tha
 
 ## Homework
 
-For the homework, you must improve the existing UI assuming the project is meant for virtual reality in its final form. Additionally, your interface must enable the following functions:
 
-* Dial a specific frequency within the allowed range to contact crewmates. 
-* Dial the emergency frequency.
-* Make, answer, and hang up calls.
-* Check the battery of the arm interface.
-* Enable restarting from the game over screens.
-* Display your crewmate information.
-* Direct you to a specific crewmate.
-* Warn you when your battery is low (<15%).
-* Inform the player of their depth.
-* Inform the player of the time spent underwater.
+Check the homework instructions in the class wiki. 
+
