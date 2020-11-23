@@ -75,12 +75,21 @@ Here, we try to rotate Ethan with a simple script, "Rotate Character" attached t
 
 ![initial](tutorial-images/yudai/initial.png)
 
-Inside the script, we define two variables: 'x_axis' and 'y_axis', which respectively control the rotation of Ethan around x and y axis.  
+Inside the script, we define two variables: 'x_axis' and 'y_axis', which respectively control the rotation of Ethan around x and y axes.  
 Importantly, we define 'x_axis' as a public float while 'y_axis' as a private float.  
 And we only dectate the value (-90) of 'y_axis' in the script.  
 Let's see how this script turns out to be...
 
 ![code1](tutorial-images/yudai/code1.png)
+
+Then, when you go back to the inspector, now you can see the variable, 'x_axis' which you can directly manipulate on the inspector.  
+Whereas, we never see anything regarding 'y_axis' on the inspector.  
+This is the fundamental difference between private and public variables you should know at this moment.  
+If you want to make your variable accessible from outside of a specific script, you have to define it as a public variable.  
+When you do not put any prefix (i.e., private or public) to your variables, Unity automatically regard them as private variables which you can only make change on them through the original script.  
+
+Now, we've set the value of 'x_axis' to 40 on the inspector.  
+Let's see the result by playing the scene.   
 
 ![inspector1](tutorial-images/yudai/inspector1.png)
 
