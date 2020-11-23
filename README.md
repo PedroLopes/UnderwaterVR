@@ -99,7 +99,27 @@ You can also visit the Asset Store if you wish to add premade 3D elements, scrip
 
 ![asset_store](tutorial-images/asset_store.png)
 
-### 6.3 Private vs. public variable (aka exposing variables to the "Inspector" tab)
+### 6.3 Game Objects and Scripts
+
+When working in Unity, you'll especially be working with things called `GameObjects` this is essentially anything that is in the scene's hierarchy.
+
+![interface](tutorial-images/Unity_GameObjects_Hierarchy.jpg)
+
+As you can see above, the `key_silver` GameObject is being selected. When selected, we get to see the GameObject highlighted in the Scene window as well as its components in the Inspector window. By default, all GameObjects include things like a name and Transform component, the later holds information like the object's position, rotation, and scale.
+
+![interface](tutorial-images/Unity_GameObjects_Inspector.jpg)
+
+Additionally, GameObjects can be nested within each other. In this case, the `key_silver` doesn't actually hold its 3D model information, in fact a GameObject nested inside of `key_silver` is the model (`pPlane3`).
+
+![interface](tutorial-images/Unity_GameObjects_ParentChild.jpg)
+
+As seen in the Inspector, GameObjects have components, which are usually Scripts added to the object. You can add new components by clicking "Add Component" in the inspector, or you can add your own custom scripts by dragging and dropping them into the object's Inspector window.
+
+![interface](tutorial-images/Unity_GameObjects_Script.jpg)
+
+Here, we drag and dropped the `ButtonTrigger` script to add it as a components of `key_silver`. New components usually appear at the end.
+
+### 6.4 Private vs. public variable (aka exposing variables to the "Inspector" tab)
 
 You need to know there are two different types of variables in Unity: ``private`` and ``public`` variables.
 
@@ -151,6 +171,6 @@ Make sure that you assign the Ethan object to the public variable, 'original' on
 As you can see, now we could successfully read the value of the public variable from the external script.  
 By editing 'externalController', you can also manipulate 'x_axis'.
 
-### 6.4 Unity3D API and reference (always search here to see what functions are available, do, etc)
+### 6.5 Unity3D API and reference (always search here to see what functions are available, do, etc)
 
 https://docs.unity3d.com/ScriptReference/
