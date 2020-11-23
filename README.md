@@ -67,3 +67,5 @@ For the homework, you must improve the existing UI assuming the project is meant
 * Display your crewmate information.
 * Direct you to a specific crewmate.
 * Warn you when your battery is low (<15%).
+* Inform the player of their depth.
+* Inform the player of the time spent underwater.
