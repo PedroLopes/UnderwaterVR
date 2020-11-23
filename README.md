@@ -69,4 +69,4 @@ We highly recommend you start by completing this tutorial: https://docs.unity3d.
 
 https://docs.unity3d.com/ScriptReference/
 
-![logo](/Users/plopes/playground/UnderwaterVR/tutorial-images/logo.png)
+![logo](tutorial-images/logo.png)
