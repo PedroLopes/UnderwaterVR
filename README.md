@@ -103,15 +103,15 @@ You can also visit the Asset Store if you wish to add premade 3D elements, scrip
 
 When working in Unity, you'll especially be working with things called `GameObjects` this is essentially anything that is in the scene's hierarchy.
 
-![interface](tutorial-images/Unity_GameObjects_Hierarchy.jpg)
+![interface](tutorial-images/Unity_GameObjects_Hierarchy.JPG)
 
 As you can see above, the `key_silver` GameObject is being selected. When selected, we get to see the GameObject highlighted in the Scene window as well as its components in the Inspector window. By default, all GameObjects include things like a name and Transform component, the later holds information like the object's position, rotation, and scale.
 
-![interface](tutorial-images/Unity_GameObjects_Inspector.jpg)
+![interface](tutorial-images/Unity_GameObjects_Inspector.JPG)
 
 Additionally, GameObjects can be nested within each other. In this case, the `key_silver` doesn't actually hold its 3D model information, in fact a GameObject nested inside of `key_silver` is the model (`pPlane3`).
 
-![interface](tutorial-images/Unity_GameObjects_ParentChild.jpg)
+![interface](tutorial-images/Unity_GameObjects_ParentChild.JPG)
 
 As seen in the Inspector, GameObjects have components, which are usually Scripts added to the object. You can add new components by clicking "Add Component" in the inspector, or you can add your own custom scripts by dragging and dropping them into the object's Inspector window.
 
