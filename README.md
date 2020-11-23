@@ -65,26 +65,6 @@ Check the homework instructions in the class wiki.
 
 We highly recommend you start by completing this tutorial: https://docs.unity3d.com/ScriptReference/
 
-### Unity's interface
-
-Here for more source and more details: https://docs.unity3d.com/Manual/UsingTheEditor.html
-
-![interface](tutorial-images/Editor-Breakdown.png)
-
-* **(A)** [The Toolbar](https://docs.unity3d.com/Manual/Toolbar.html) provides access to the most essential working features. On the left it contains the basic tools for manipulating the **Scene view** and the **GameObjects** within it. In the centre are the play, pause and step controls. To run the application, press the play button. The game view (C) should now be running the game and the play button should turn blue. 
-![play_button](tutorial-images/play_button.png)
-You can either pause the game or stop your game by pressing the play button again. Note that all the new changes made after running the game will only be applied on the next instance. Inspector (E) values change during the gameplay will also reset once you stop the game. 
-* **(B)** [The Hierarchy window](https://docs.unity3d.com/Manual/Hierarchy.html) is a hierarchical text representation of every GameObject (objects in your game) in the **Scene**. Each item in the **Scene** has an entry in the hierarchy, so the two windows are inherently linked. The hierarchy reveals the structure of how GameObjects attach to each another following a parent-child structure. Children's reference (i.e. coordinates) are based on the parent's unless specified, and the root parent to the world's.
-* **(C)** [The Game view](https://docs.unity3d.com/Manual/GameView.html) simulates what your final rendered game will look like through your Scene **Cameras**. When you click the Play button, the simulation begins.
-* **(D)** [The Scene view](https://docs.unity3d.com/Manual/UsingTheSceneView.html) allows you to visually navigate and edit your Scene. The Scene view can show a 3D or 2D perspective, depending on the type of Project you are working on. If you can't see the scene window, you can find it in a tab on the central window next to the Game view.
-![scene_game_tabs](tutorial-images/scene_game_tabs.png)
-* **(E)** [The Inspector Window](https://docs.unity3d.com/Manual/UsingTheInspector.html) allows you to view and edit all the properties of the currently selected GameObject. Because different types of GameObjects have different sets of properties, the layout and contents of the **Inspector** window change each time you select a different GameObject. Please refer to the later section about how to display variables in the inspector.
-* **(F)** [The Project window](https://docs.unity3d.com/Manual/ProjectView.html) displays your library of Assets (scripts, 3D files, shaders, etc...) that are available to use in your Project. When you import Assets into your Project, they appear here.
-
-You can also visit the Asset Store if you wish to add premade 3D elements, scripts etc... to your project. Please only use free assets and delete all unused ones to avoid having a large project file.
-
-![asset_store](tutorial-images/asset_store.png)
-
 ### Private vs. public variable
 
 You need to know there are two different types of variables in Unity: private and public variables.
@@ -94,6 +74,11 @@ There is a character (Ethan) standing on a plain.
 Here, we try to rotate Ethan with a simple script, "Rotate Character" attached to Ethan.
 
 ![initial](tutorial-images/yudai/initial.png)
+
+Inside the script, we define two variables: 'x_axis' and 'y_axis', which respectively control the rotation of Ethan around x and y axis.  
+Importantly, we define 'x_axis' as a public float while 'y_axis' as a private float.  
+And we only dectate the value (-90) of 'y_axis' in the script.  
+Let's see how this script turns out to be...
 
 ![code1](tutorial-images/yudai/code1.png)
 
