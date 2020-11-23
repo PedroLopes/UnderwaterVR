@@ -69,18 +69,21 @@ We highly recommend you start by completing this tutorial: https://docs.unity3d.
 
 You need to know there are two different types of variables in Unity: private and public variables.
 
-We will explain this with a simple example you see in the below.  
+We will explain this with a simple example you see in the below.
+
+![initial](tutorial-images/yudai/initial.png)
+
 There is a character (Ethan) standing on a plain.  
 Here, we try to rotate Ethan with a simple script, "Rotate Character" attached to Ethan.
 
-![initial](tutorial-images/yudai/initial.png)
+![code1](tutorial-images/yudai/code1.png)
 
 Inside the script, we define two variables: 'x_axis' and 'y_axis', which respectively control the rotation of Ethan around x and y axes.  
 Importantly, we define 'x_axis' as a public float while 'y_axis' as a private float.  
 And we only dectate the value (-90) of 'y_axis' in the script.  
 Let's see how this script turns out to be...
 
-![code1](tutorial-images/yudai/code1.png)
+![inspector1](tutorial-images/yudai/inspector1.png)
 
 Then, when you go back to the inspector, now you can see the variable, 'x_axis' which you can directly manipulate on the inspector.  
 Whereas, we never see anything regarding 'y_axis' on the inspector.  
@@ -91,9 +94,9 @@ When you do not put any prefix (i.e., private or public) to your variables, Unit
 Now, we've set the value of 'x_axis' to 40 on the inspector.  
 Let's see the result by playing the scene.   
 
-![inspector1](tutorial-images/yudai/inspector1.png)
-
 ![result1](tutorial-images/yudai/result1.png)
+
+As you can see, Ethan is now facing to the view (because of 'y_axis') and tilted (because of 'x_axis').
 
 ![initial2](tutorial-images/yudai/initial2.png)
 
