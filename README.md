@@ -66,3 +66,4 @@ For the homework, you must improve the existing UI assuming the project is meant
 * Enable restarting from the game over screens.
 * Display your crewmate information.
 * Direct you to a specific crewmate.
+* Warn you when your battery is low (<15%).
